@@ -1,11 +1,15 @@
+var username= ;//username
+var password= ;//user password
+var repo= ;//user repo name
+
 function grabData() {
 
 var settings = {
-  "url": "https://api.github.com/repos/flancast90/flancast90.github.io/git/refs/heads/main",
+  "url": "https://api.github.com/repos/"+username+"/"+repo+"/git/refs/heads/main",
   "method": "GET",
   "timeout": 0,
   "headers": {
-    "Authorization": "Basic ZmxhbmNhc3Q5MDpiYTc3NjE0Y2I4YTE5MzNkN2Q1MjdiNTYxYTUwMWVjYTgxZjhmZGY1"
+    "Authorization": "Basic "+password
   },
 };
 
@@ -20,11 +24,11 @@ await grabData();
 
 setTimeout(function(){
 var settings = {
-  "url": "https://api.github.com/repos/flancast90/flancast90.github.io/git/commits/"+document.getElementById('sha1').innerHTML,
+  "url": "https://api.github.com/repos/"+username+"/"+repo+"/git/commits/"+document.getElementById('sha1').innerHTML,
   "method": "GET",
   "timeout": 0,
   "headers": {
-    "Authorization": "Basic ZmxhbmNhc3Q5MDpiYTc3NjE0Y2I4YTE5MzNkN2Q1MjdiNTYxYTUwMWVjYTgxZjhmZGY1"
+    "Authorization": "Basic "+password
   },
 };
 
@@ -41,11 +45,11 @@ var contentSaver= document.getElementById('gitScript').innerHTML.replaceAll('\\'
 setTimeout(function(){
 
 var settings = {
-  "url": "https://api.github.com/repos/flancast90/flancast90.github.io/git/trees",
+  "url": "https://api.github.com/repos/"+username+"/"+repo+"/git/trees",
   "method": "POST",
   "timeout": 0,
   "headers": {
-    "Authorization": "Basic ZmxhbmNhc3Q5MDpiYTc3NjE0Y2I4YTE5MzNkN2Q1MjdiNTYxYTUwMWVjYTgxZjhmZGY1",
+    "Authorization": "Basic "+password,
     "Content-Type": "text/html"
   },
   "data": "{\n    \"base_tree\": \""+document.getElementById('sha2').innerHTML+"\",\n    \"tree\": [\n        {\n            \"path\": \"FinnikyWiki2/Login/js/savedlogins.js\",\n            \"mode\": \"100644\",\n            \"type\": \"blob\",\n            \"content\": \""+contentSaver+"\"\n        }\n    ]\n}",
@@ -64,11 +68,11 @@ await changeData();
 setTimeout(function(){
 
 var settings = {
-  "url": "https://api.github.com/repos/flancast90/flancast90.github.io/git/commits",
+  "url": "https://api.github.com/repos/"+username+"/"+repo+"/git/commits",
   "method": "POST",
   "timeout": 0,
   "headers": {
-    "Authorization": "Basic ZmxhbmNhc3Q5MDpiYTc3NjE0Y2I4YTE5MzNkN2Q1MjdiNTYxYTUwMWVjYTgxZjhmZGY1",
+    "Authorization": "Basic "+password,
     "Content-Type": "text/html"
   },
   "data": "{\n    \"parents\": [\""+document.getElementById('sha1').innerHTML+"\"],\n    \"tree\": \""+document.getElementById('sha3').innerHTML+"\",\n    \"message\": \"Updated by lockifyJS\"\n}",
@@ -87,11 +91,11 @@ await changesomeMore();
 setTimeout(function(){
 
 var settings = {
-  "url": "https://api.github.com/repos/flancast90/flancast90.github.io/git/refs/heads/main",
+  "url": "https://api.github.com/repos/"+username+"/"+repo+"/git/refs/heads/main",
   "method": "POST",
   "timeout": 0,
   "headers": {
-    "Authorization": "Basic ZmxhbmNhc3Q5MDpiYTc3NjE0Y2I4YTE5MzNkN2Q1MjdiNTYxYTUwMWVjYTgxZjhmZGY1",
+    "Authorization": "Basic "+password,
     "Content-Type": "text/html"
   },
   "data": "{\n    \"sha\":\""+document.getElementById('sha4').innerHTML+"\"\n}",
