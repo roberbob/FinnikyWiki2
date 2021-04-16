@@ -1,0 +1,194 @@
+   .utterances {
+      position: relative;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .utterances-frame {
+      color-scheme: light;
+      left: 0;
+      right: 0;
+      width: 1px;
+      min-width: 100%;
+      max-width: 100%;
+      height: 100%;
+      border: 0;
+    }
+@media screen and (max-device-width: 800px){
+            body{
+                font-size:1.1em !important;
+                line-height:1.2;
+            }
+            span{
+                 font-size:1.2em !important;
+            }
+            input[type]{
+                 -webkit-appearance: none !important;   
+            }
+            button{
+                -webkit-appearance: none !important;
+                padding:20px !important;
+                border-radius: 15px !important;
+                font-size:1.1em !important;
+            }
+            #search-foo{
+                height:50% !important;
+                width:90% !important;
+                margin-left:1.7em !important;
+                margin-right:1em !important;
+                left:0px !important;
+                right:0px !important;
+            }
+            #page-options{
+                width:100% !important;
+                height:auto !important;
+            }
+            #more-options{
+                width:100% !important;
+                height:auto !important;
+            }
+            #login-button{
+                width:100% !important;
+                height:auto !important;
+            } 
+            #hamburger-menu{
+                display:block !important;
+                font-size:1.2em !important;
+                color: #E2E2E2 !important;
+            }
+            #cancel-menu{
+                font-size:1.2em !important;
+                color: #E2E2E2 !important;
+            }
+            #page-options h2{
+                font-size:1em !important;   
+            }
+            #more-options h2{
+                font-size:1em !important;
+            }
+            #login-button h2{
+                font-size:1em !important;
+            }
+            #button-hover{
+                display:none;
+            }
+            p{
+                font-size:1em;
+            }
+        }
+    
+.title{
+  font-weight: bold;
+  font-size: 1.3em;
+  text-align: center !important; 
+}
+.con{
+  margin-left:10px; 
+  margin-right:10px;
+}
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+#navig{
+position:fixed;
+margin-top:15% !important;
+}
+        #navig li{
+          border: 1px solid #ddd;
+          background-color: #dd4b39;
+          padding: 12px;
+          text-decoration: none;
+          font-size: 1.1em;
+          display: block;
+        }
+a{
+   color: white;
+   text-decoration:none;
+   font-weight:bold;
+   font-size:1.1em;
+}
+#revisionScr{
+margin-top: 10%;
+    margin-left: 7%;
+    color: #505050;
+    font-weight: bold;
+    text-align: center;
+}
+#lockifyJS{
+    position:fixed;
+    top: 20%;
+    height:85% !important;
+    left: 7%;
+    width:90%;
+}
+textarea{
+background-color:#101010;
+color:#505050;
+border:none !important;
+outline:none;
+border-color: transparent;
+}
+    #qrcode{
+     z-index:101;   
+    }
+#qrcode img[src]{
+position:absolute;
+height:30%;
+width: calc(100vh/3);
+top:35%;
+bottom:35%;
+margin-left: calc(100vh/1.15);
+margin-right: calc(100vh/1.15);
+}
+        .disqus_thread{
+         display:none;       
+        }

@@ -1,0 +1,6 @@
+var flancast= "U2FsdGVkX18hZij5bjRQ3NSmPZH9hErG9E08688h/pHTQGv4k3TVUifAX5+d2bA+oYAyeI4iS/wQ3juU017XgewuFOryDA/2pA8ieJF6nmmNX8ZPgVRNq0ciPYLFi5RY";
+
+var root= 'U2FsdGVkX193jkLLfmhmhxOynjOUsWvwRqx+OAASv0lbrHwM7mMO5Ik6hq3LY9Si';
+var t= 'U2FsdGVkX1+5KTdZ5GVoIp1N2dVGVANO8KVQg9pYyLdeY9NEympDb58n2WuLdxGn';
+var root_user= 'U2FsdGVkX18wttAMKneiP7X+M+JzIPfDWMEFD0lKUCKXJbN5hGqfjKUWEgR4bLO7vNXfZf73PEh2J1IkTM2tiA==';
+var d= 'U2FsdGVkX1+YmaOgbdMoqnlHg6z+zv3PEaYRw+u0eqaaBQoc6XmJFH3Hggjw3OXN';
